@@ -12,18 +12,17 @@ export default () =>
       }}>
         <h1>COMPSCI335 - WK01L03</h1>
       </div>
-      <div style={{
-        height: 200,
-        width: 200,
-        marginTop: 5
-      }} >
+      <div>
         <ReactPlayer  url='../demo.m4v' 
                     controls
-                    width='400px'
-                    height='200px'
+                    width='70%'
+                    height='auto'
+                    playIcon
                     config={{ file: {
                       tracks: [
                         {kind: 'subtitles', src: 'my_captions.vtt', srcLang: 'en', default: true},
+                        {kind: 'subtitles', src: 'my_captions.vtt', srcLang: 'zh'},
+
                       ]
                     }}} />
         </div>
