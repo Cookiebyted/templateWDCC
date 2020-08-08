@@ -8,7 +8,7 @@ export default () =>
       <div style={{
         marginTop: 30
       }}>
-        <h1>COMPSCI335 - WK01L03</h1>
+        <bold><h1>COMPSCI335 - WK01L03</h1></bold>
       </div>
       <div style={{
         background: "black",
@@ -18,8 +18,9 @@ export default () =>
       }} />
       <div class="flex mb-4">
         <div class="flex-1 h-12"><h2>About</h2></div>
-        <div class="flex-1 h-12"><h2>Piazza</h2></div>
+        <div class="flex-1 h-12"><a target="_blank" href="https://piazza.com/"><h2>Piazza</h2></a></div>
         <div class="flex-1 h-12"><h2>Lectures</h2></div>
+        <div class="flex-1 h-12"></div>
         <div class="flex-1 h-12"></div>
         <div class="flex-1 h-12"></div>
         <div class="flex-1 h-12"></div>
