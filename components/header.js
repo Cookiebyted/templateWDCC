@@ -17,6 +17,7 @@ function Header ({ user, loading }) {
         <a style={{width: 100, height: 23, margin: 'auto'}} href='https://canvas.auckland.ac.nz/calendar#view_name=month&view_start=2020-08-05'>
         <img src='Canvaslogo.png'/>
         </a>
+        <button><a href='/hello'>main content</a></button>
         {/* </div> */}
          {/* alskfjdlaskjfd
         </div> */}
