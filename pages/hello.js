@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
 import React from 'react'
 import ReactPlayer from '../node_modules/react-player'
-
+import Transcript from '../components/transcript'
 // React Components can be very very terse
 const name = 'Matthew'
 // const 
@@ -20,7 +20,6 @@ export default () =>
                     width='70%'
                     height='auto'
                     playIcon
-                    marginRight='30px'
                     config={{ file: {
                       tracks: [
                         {kind: 'subtitles', src: 'my_captions.vtt', srcLang: 'en', default: true},
@@ -28,7 +27,9 @@ export default () =>
 
                       ]
                     }}}/>
-        <div>fdsa</div >
+        <div style={{ width: '30%', display: 'block', marginLeft:'30px' }}>
+          <Transcript/>
+        </div >
 
       </div>
       <div class="flex mb-4">
