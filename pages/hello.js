@@ -4,6 +4,7 @@ import ReactPlayer from '../node_modules/react-player'
 
 // React Components can be very very terse
 const name = 'Matthew'
+// const 
 export default () =>
   <Layout>
     <article>
@@ -28,7 +29,7 @@ export default () =>
         </div>
       <div class="flex mb-4">
         <div class="flex-1 h-12"><h2>About</h2></div>
-        <div class="flex-1 h-12"><a target="_blank" href="https://piazza.com/"><h2>Piazza</h2></a></div>
+        <div class="flex-1 h-12"><a target="_blank" href="https://piazza.com/class/kc2ufpcfqzx4rp"><h2>Piazza</h2></a></div>
         <div class="flex-1 h-12"><h2>Lectures</h2></div>
         <div class="flex-1 h-12"></div>
         <div class="flex-1 h-12"></div>

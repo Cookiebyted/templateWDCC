@@ -1,4 +1,32 @@
-# WDCC MERN Workshop. 
+# The FirstTimers
+
+## Quick start
+* Create .env.local in the current folder
+* Add the following to the .env.local file
+
+    HOST=http://localhost:3141
+    MONGODB_URI=mongodb+srv://clientApplication:5sVLt7qFCLAWNMb7@cluster0.nqmka.mongodb.net/wdcc-mern-01?retryWrites=true&w=majority
+    AUTH0_CLIENT_ID=QuMmUTJm7sVpOc6z0XkJ3SLw9Qndiybr
+    AUTH0_DOMAIN=dev-so1al4mm.au.auth0.com
+    AUTH0_CLIENT_SECRET=RwTeC9NnoGYKNUJ7Hv3s94plNp9mFP_aBvNGCnPRBrTD5hcs9uuBtPeS42tM5GYH
+    REDIRECT_URI=http://localhost:3141/api/callback
+    POST_LOGOUT_REDIRECT_URI=http://localhost:3141/
+    SESSION_COOKIE_SECRET=7b9c92e9aa1d3d882369e7c3d8e4f9b3
+* Open terminal (either vscode or something else) run ```npm install```
+* Then run ```npm run dev``` to open the sever
+* We are still developing all the button and Navigation and stuff. Right now u can just go to this page ```http://localhost:3141/hello```
+
+## Our goal and solutions
+Our main goal is to help students who have trouble in learning stuff remotely, particulally in watching lecture recording. 
+<br><br>
+To help that we thought we can improve the video platform and add some subtitles to the recordings, either manually or AI-ly. 
+<br><br>
+Our first idea is to build a platform (most likely to be a website) that let the user to login to the database or university id (right now we just use the uni id as demo). 
+<br>
+Then 
+
+
+<!-- # WDCC MERN Workshop. 
 A boilerplate for workshops and tutorials for MERN - Mongo, Express, React, Node/Next
 
 # The WWDC MERN template
@@ -67,4 +95,4 @@ You will need to complete
 * Access keys for Auth0 and vercel in .env.local and vercel.conf
 * prod url for app in .env, vercel.conf and Auth0 web app configuration. 
 
-
+ -->
