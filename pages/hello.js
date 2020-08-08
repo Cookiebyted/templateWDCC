@@ -1,4 +1,6 @@
 import Layout from '../components/layout'
+import React from 'react'
+import ReactPlayer from '../node_modules/react-player'
 
 // React Components can be very very terse
 const name = 'Matthew'
@@ -11,11 +13,20 @@ export default () =>
         <bold><h1>COMPSCI335 - WK01L03</h1></bold>
       </div>
       <div style={{
-        background: "black",
         height: 200,
-        width: 400,
+        width: 200,
         marginTop: 5
-      }} />
+      }} >
+        <ReactPlayer  url='../demo.m4v' 
+                    controls
+                    width='400px'
+                    height='200px'
+                    config={{ file: {
+                      tracks: [
+                        {kind: 'subtitles', src: 'my_captions.vtt', srcLang: 'en', default: true},
+                      ]
+                    }}} />
+        </div>
       <div class="flex mb-4">
         <div class="flex-1 h-12"><h2>About</h2></div>
         <div class="flex-1 h-12"><a target="_blank" href="https://piazza.com/"><h2>Piazza</h2></a></div>

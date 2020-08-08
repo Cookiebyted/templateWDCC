@@ -1,0 +1,50 @@
+WEBVTT - Some title
+
+00:02.175 --> 00:07.640
+There are a few different ways we can define functions in Javascript
+
+00:08.155 --> 00:13.615
+We looked at one particular type called Arrow Functions
+
+00:15.220 --> 00:17.950
+so, lets define one!
+
+00:23.000 --> 00:27.085
+so if we wanted to define a constant, we define it this way
+
+00:27.105 --> 00:29.215
+right, lets define a constant first!
+
+00:33.000 --> 00:35.000
+If you wanted to define a function
+
+00:35.000 --> 00:37.000
+we can do it the same way
+
+00:37.000 --> 00:39.000
+say constant squared
+
+00:39.000 --> 00:41.000
+equals two
+
+00:44.735 --> 00:47.450
+take no parameters
+
+00:47.450 --> 00:49.450
+and then return
+
+00:52.760 --> 00:56.395
+sorry, take one parameter, n obviously 
+
+00:56.415 --> 00:59.215
+because we are trying to do a square 
+
+01:00.000 --> 01:01.940
+of a given number
+
+01:01.960 --> 01:05.745
+and return 
+
+01:08.065 --> 01:11.385
+n times n
+
