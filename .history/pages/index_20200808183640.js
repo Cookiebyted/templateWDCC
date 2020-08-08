@@ -33,20 +33,14 @@ function Home () {
     // console.log(e.target)
     logEvent('click', 1)
   }
-
-  <button OnClick="location.href='link.html'" className='btn-blue'>Visit Page Now</button>
-
   return (
     <Layout user={user} loading={loading}>
       <h1>COMPSCI 335 Lectures</h1>
       <p><strong><u>Content covered in Semester Two</u></strong></p>
-      <button className='btn-blue'>Event</button>
-      
-      <ol>
-        <li>COMPSCI 313 Computer Organisation</li>
-        <li>COMPSCI 345 Human-computer Interaction</li>
-        <li>COMPSCI 350 Mathematical Foundations of Computer Science</li>
-      </ol>
+      <button onclick="myFunction()">Click me</button>
+        COMPSCI 313 Computer Organisation<br>
+        COMPSCI 345 Human-computer Interaction
+        COMPSCI 350 Mathematical Foundations of Computer Science
 
       {loading && <p>Loading login info...</p>}
       {!loading && !user && (
@@ -61,7 +55,6 @@ function Home () {
           <ProfileCard user={user}>
             <button className='btn-blue' onClick={handleClick}>Event</button>
           </ProfileCard>
-          <button className='btn-blue' onClick={handleClick}>Event</button>
           <h2>Reports</h2>
           <LinkA href='/report'>Report - useEffect</LinkA>
           <LinkA href='/reportSSR'>Report - SSR</LinkA>

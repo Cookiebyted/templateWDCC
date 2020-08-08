@@ -61,7 +61,6 @@ function Home () {
           <ProfileCard user={user}>
             <button className='btn-blue' onClick={handleClick}>Event</button>
           </ProfileCard>
-          <button className='btn-blue' onClick={handleClick}>Event</button>
           <h2>Reports</h2>
           <LinkA href='/report'>Report - useEffect</LinkA>
           <LinkA href='/reportSSR'>Report - SSR</LinkA>
