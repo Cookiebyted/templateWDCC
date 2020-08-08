@@ -13,23 +13,27 @@ export default () =>
       }}>
         <bold><h1>COMPSCI335 - WK01L03</h1></bold>
       </div>
-      <div>
+      <div style= {{ display: 'flex' }}>
         <ReactPlayer  url='../demo.m4v' 
+                    display='inline-block'
                     controls
                     width='70%'
                     height='auto'
                     playIcon
+                    marginRight='30px'
                     config={{ file: {
                       tracks: [
                         {kind: 'subtitles', src: 'my_captions.vtt', srcLang: 'en', default: true},
                         {kind: 'subtitles', src: 'my_captions.vtt', srcLang: 'zh'},
 
                       ]
-                    }}} />
-        </div>
+                    }}}/>
+        <div>fdsa</div >
+
+      </div>
       <div class="flex mb-4">
         <div class="flex-1 h-12"><h2>About</h2></div>
-        <div class="flex-1 h-12"><a target="_blank" href="https://piazza.com/class/kc2ufpcfqzx4rp"><h2>Piazza</h2></a></div>
+        <div class="flex-1 h-12"><a target="_blank" href="https://piazza.com/class/kc2ufpcfqzx4rp" style={{ text: '#FFF' }} ><h2>Piazza</h2></a></div>
         <div class="flex-1 h-12"><h2>Lectures</h2></div>
         <div class="flex-1 h-12"></div>
         <div class="flex-1 h-12"></div>
