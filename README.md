@@ -21,9 +21,9 @@ Our main goal is to help students who have trouble in learning stuff remotely, p
 <br><br>
 To help that we thought we can improve the video platform and add some subtitles to the recordings, either manually or AI-ly. 
 <br><br>
-Our first idea is to build a platform (most likely to be a website) that let the user to login to the database or university id (right now we just use the uni id as demo). 
-<br>
-Then 
+The users are able to see thier lecture recordings and subtitles. They are also able to post their transcripts but unortuantly we have troubles in that. 
+<br><br>
+Overall it is a great platform to help students improve their studying
 
 
 <!-- # WDCC MERN Workshop. 
