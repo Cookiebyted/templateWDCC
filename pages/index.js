@@ -38,21 +38,26 @@ function Home () {
 
   return (
     <Layout user={user} loading={loading}>
-      <h1>COMPSCI 335 Lectures</h1>
+      <div>
+        <h1>COMPSCI 335 Lectures</h1>
+      </div>
       <p><strong><u>Content covered in Semester Two</u></strong></p>
-      <button className='btn-blue'>Event</button>
       
-      <ol>
-        <li>COMPSCI 313 Computer Organisation</li>
-        <li>COMPSCI 345 Human-computer Interaction</li>
-        <li>COMPSCI 350 Mathematical Foundations of Computer Science</li>
-      </ol>
+      <div>
+        <ol>
+          <li>COMPSCI 313 Computer Organisation</li>
+          <li>COMPSCI 345 Human-computer Interaction</li>
+          <li>COMPSCI 350 Mathematical Foundations of Computer Science</li>
+          <li><a href="/hello">COMPSCI 335 Functional Programming and Distributed Servers</a></li>
+        </ol>
+      </div>
+      
 
       {loading && <p>Loading login info...</p>}
       {!loading && !user && (
         <>
-          <p>
-            To view the dashboard <a href='/api/login'>Login</a>
+          <p style={{marginTop : "20px"}}>
+            To view the dashboard: <button className='btn-blue' onClick={handleClick}><a href='/api/login' style={{color:"white"}}>Login</a></button>
           </p>
         </>
       )}

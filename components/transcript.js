@@ -7,7 +7,7 @@ function transcript()
     return(
       <Form>
         <Form.Group controlId="transcriptForm.ControlSelect2">
-          <Form.Label>Transcript</Form.Label>
+          
           <div class="align-items-stretch">
           <Form.Control as="select" multiple style={{height: 450, border:"1.5px solid rgb(228, 061, 048)"}}>
             <option>There are a few different ways we can define functions in Javascript</option>

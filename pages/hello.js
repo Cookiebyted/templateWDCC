@@ -27,7 +27,7 @@ export default () =>
 
                       ]
                     }}}/>
-        <div style={{ width: '30%', display: 'flex', marginLeft:'30px' }}>
+        <div style={{ width: '30%', display: 'flex', marginLeft:'30px', marginRight:'100px' }}>
           <Transcript/>
         </div >
 
