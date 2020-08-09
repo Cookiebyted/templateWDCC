@@ -20,8 +20,8 @@ function Header ({ user, loading }) {
         </a>
         <div style={{marginLeft: 'auto'}}>
         <button><a style={{margin: 20 }} href='/'>Home</a></button>
-        <button><a  href='/api/login'>Login</a></button>
-        <button><a style={{margin: 20 }} href='/api/logout'>Log Out</a></button>
+        {!user && (<button><a  style={{marginRight: 20 }} href='/api/login'>Login</a></button>)}
+        {user && (<button><a style={{marginRight: 20 }} href='/api/logout'>Log Out</a></button>)}
         </div>
         {/* </div> */}
          {/* alskfjdlaskjfd
