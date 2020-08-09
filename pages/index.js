@@ -57,20 +57,16 @@ function Home () {
       {!loading && !user && (
         <>
           <p style={{marginTop : "20px"}}>
-            To view the dashboard: <button className='btn-blue' onClick={handleClick}><a href='/api/login' style={{color:"white"}}>Login</a></button>
+            To view the dashboard: <button className='btn-blue'><a href='/api/login' style={{color:"blue"}}>Login</a></button>
           </p>
         </>
       )}
       {user && (
         <>
           <ProfileCard user={user}>
-            <button className='btn-blue' onClick={handleClick}>Event</button>
+            <button className='btn-blue' onClick={handleClick}>Courses</button>
           </ProfileCard>
-          <button className='btn-blue' onClick={handleClick}>Event</button>
-          <h2>Reports</h2>
-          <LinkA href='/report'>Report - useEffect</LinkA>
-          <LinkA href='/reportSSR'>Report - SSR</LinkA>
-          <LinkA href='/reportSWR'>Report - SWR</LinkA>
+
 
         </>)}
     </Layout>
