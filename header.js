@@ -14,14 +14,15 @@ function Header ({ user, loading }) {
       <nav className='container flex items-center justify-between flex-wrap  py-2 '>
         {/* <div id='Brand' className='text-3xl text-black-700'> */}
         {/* <div style={{width: 50, height: 50, margin: 'auto'}}> */}
-        <h2 style= {{marginLeft: 10}}>First Timers Inc.</h2>
-        <a style={{width: 100, height: 23, marginLeft: 426, marginTop: 4, marginBottom: 4}} href='https://canvas.auckland.ac.nz/'>
+        <a style={{width: 100, height: 23, marginLeft: 20}} href='https://canvas.auckland.ac.nz/'>
         <img src='Canvaslogo.png'/>
         </a>
+        <h1 style= {{marginLeft: 420}}>First Timers Inc.</h1>
+        
         <div style={{marginLeft: 'auto'}}>
-        <button><a style={{margin: 20 }} href='/'>Home</a></button>
-        {!user && (<button><a  style={{marginRight: 20 }} href='/api/login'>Login</a></button>)}
-        {user && (<button><a style={{marginRight: 20 }} href='/api/logout'>Log Out</a></button>)}
+        <button><a style={{margin: 25 }} href='/'>Home</a></button>
+        {!user && (<button><a  style={{marginRight: 25 }} href='/api/login'>Login</a></button>)}
+        {user && (<button><a style={{marginRight: 25 }} href='/api/logout'>Log Out</a></button>)}
         </div>
         {/* </div> */}
          {/* alskfjdlaskjfd
