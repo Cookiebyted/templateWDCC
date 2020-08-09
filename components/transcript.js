@@ -26,6 +26,23 @@ function transcript()
             <option>of a given number</option>
             <option>and return</option>
             <option>n times n</option>
+            <option>so this is a function and</option>
+            <option>which takes a paramter or a number of parameters and </option>
+            <option>we can't really do something </option>
+            <option>it deosn't have to return anything really</option>
+            <option>it is not possible</option>
+            <option>So essentially the way the function T </option>
+            <option>is defined as we have</option>
+            <option>got a name of the function</option>
+            <option>and then the number of parameters it takes </option>
+            <option>and then there's a function body the parameters</option>
+            <option>and the function body.</option>
+            <option>They are separated by a narrow an equal sign</option>
+            <option>followed by</option>
+            <option>a greater than sign making up an error.</option>
+            <option>So this is coded Arrow function Arrow.</option>
+            <option>In fact correct terminology is error function expression.</option>
+ 
 
           </Form.Control>
           </div>
