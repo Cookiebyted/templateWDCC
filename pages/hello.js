@@ -13,20 +13,27 @@ export default () =>
         <bold><h1>COMPSCI335 - WK01L03</h1></bold>
       </div>
       <div style={{
+        marginTop: 30,
+        marginLeft: 80
+      }}>
+      </div>
+      <div style={{
         height: 200,
         width: 200,
         marginTop: 5
       }} >
-        <ReactPlayer  url='../demo.m4v' 
-                    controls
-                    width='400px'
-                    height='200px'
-                    config={{ file: {
-                      tracks: [
-                        {kind: 'subtitles', src: 'my_captions.vtt', srcLang: 'en', default: true},
-                      ]
-                    }}} />
-        </div>
+        <ReactPlayer url='../demo.m4v'
+          controls
+          width='400px'
+          height='200px'
+          config={{
+            file: {
+              tracks: [
+                { kind: 'subtitles', src: 'my_captions.vtt', srcLang: 'en', default: true },
+              ]
+            }
+          }} />
+      </div>
       <div class="flex mb-4">
         <div class="flex-1 h-12"><h2>About</h2></div>
         <div class="flex-1 h-12"><a target="_blank" href="https://piazza.com/"><h2>Piazza</h2></a></div>
@@ -38,4 +45,4 @@ export default () =>
         <div class="flex-1 h-12"></div>
       </div>
     </article>
-  </Layout>
+  </Layout >
