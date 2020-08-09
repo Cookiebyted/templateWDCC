@@ -19,6 +19,7 @@ function Header ({ user, loading }) {
         </a>
         <div style={{marginLeft: 'auto'}}>
         <button><a style={{margin: 20 }} href='/'>Home</a></button>
+        {/* <button><a style={{margin: 20 }} href='/hello'>Lecture</a></button> */}
         <button><a  href='/api/login'>Login</a></button>
         <button><a style={{margin: 20 }} href='/api/logout'>Log Out</a></button>
         </div>

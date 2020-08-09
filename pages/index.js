@@ -38,21 +38,22 @@ function Home () {
 
   return (
     <Layout user={user} loading={loading}>
-      <h1>COMPSCI 335 Lectures</h1>
+      <h1>Lectures</h1>
       <p><strong><u>Content covered in Semester Two</u></strong></p>
-      <button className='btn-blue'>Event</button>
+      {/* <button className='btn-blue'>Event</button>
       
       <ol>
         <li>COMPSCI 313 Computer Organisation</li>
         <li>COMPSCI 345 Human-computer Interaction</li>
         <li>COMPSCI 350 Mathematical Foundations of Computer Science</li>
-      </ol>
+      </ol> */}
 
       {loading && <p>Loading login info...</p>}
       {!loading && !user && (
         <>
           <p>
-            To view the dashboard <a href='/api/login'>Login</a>
+            To view the dashboard plz <button className='btn-blue'><a href='/api/login'>Login</a></button>
+
           </p>
         </>
       )}
