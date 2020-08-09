@@ -14,10 +14,14 @@ function Header ({ user, loading }) {
       <nav className='container flex items-center justify-between flex-wrap  py-2 '>
         {/* <div id='Brand' className='text-3xl text-black-700'> */}
         {/* <div style={{width: 50, height: 50, margin: 'auto'}}> */}
-        <a style={{width: 100, height: 23, margin: 'auto'}} href='https://canvas.auckland.ac.nz/calendar#view_name=month&view_start=2020-08-05'>
+        <a style={{width: 100, height: 23, marginLeft: 10, marginTop: 4, marginBottom: 4}} href='https://canvas.auckland.ac.nz/calendar#view_name=month&view_start=2020-08-05'>
         <img src='Canvaslogo.png'/>
         </a>
-        <button><a href='/hello'>main content</a></button>
+        <div style={{marginLeft: 'auto'}}>
+        <button><a style={{margin: 20 }} href='/'>Home</a></button>
+        <button><a  href='/api/login'>Login</a></button>
+        <button><a style={{margin: 20 }} href='/api/logout'>Log Out</a></button>
+        </div>
         {/* </div> */}
          {/* alskfjdlaskjfd
         </div> */}
@@ -26,7 +30,6 @@ function Header ({ user, loading }) {
           Hi {user && user.nickname}!
           </MenuItem>
           <img src={user.picture} alt="User Avatar" width="45" height="20" />
-
           {!loading &&
             (user ? (
               <>
@@ -39,7 +42,7 @@ function Header ({ user, loading }) {
             ))}
         </ul> */}
       </nav>
-
+        
     </header>
   )
 }
