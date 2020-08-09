@@ -14,7 +14,8 @@ function Header ({ user, loading }) {
       <nav className='container flex items-center justify-between flex-wrap  py-2 '>
         {/* <div id='Brand' className='text-3xl text-black-700'> */}
         {/* <div style={{width: 50, height: 50, margin: 'auto'}}> */}
-        <a style={{width: 100, height: 23, marginLeft: 10, marginTop: 4, marginBottom: 4}} href='https://canvas.auckland.ac.nz/calendar#view_name=month&view_start=2020-08-05'>
+        <h2 style= {{marginLeft: 10}}>First Timers Inc.</h2>
+        <a style={{width: 100, height: 23, marginLeft: 426, marginTop: 4, marginBottom: 4}} href='https://canvas.auckland.ac.nz/'>
         <img src='Canvaslogo.png'/>
         </a>
         <div style={{marginLeft: 'auto'}}>
