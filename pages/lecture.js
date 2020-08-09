@@ -1,57 +1,44 @@
-import fetch from 'node-fetch'
 import Layout from '../components/layout'
-import { useFetchUser } from '../lib/user'
-import config from '../lib/config'
-import ProfileCard from '../components/ProfileCard'
-import Link from 'next/link'
-const LinkA = ({ children, href }) =>
-  <Link href={href}>
-    <a className='pl-4 block pr-4 underline hover:text-white'>{children}</a>
-  </Link>
+import React from 'react'
+import ReactPlayer from '../node_modules/react-player'
 
-function Home () {
-  // set required to true to force the page to require login.
-  const { user, loading } = useFetchUser({ required: false })
+export default () =>{
+  const [showRelatedVideos, setShowRelatedVideos] = React.useState(false)
+  const filenames = ['demo.4mp4', 'demo2', 'demo3']
+  return(
+    <Layout>
+      <article>
+        <div style={{
+          marginTop: 30
+        }}>
+          <bold><h1>COMPSCI335 - Functional Programming and Distributed Services</h1></bold>
+        </div>
+        <div style= {{ display: 'flex' }}>
 
-  const logEvent = async (type, value) => {
-    const event = {
-      name: user.nickname,
-      type: type,
-      value: value
-      // date: added server side so we can't lie
-    }
-    await fetch(`${config.HOST}/api/events`, {
-      method: 'post',
-      body: JSON.stringify(event)
-    })
-
-    // TODO handle error if event cannot be posted.
-    // TODO display feedback if event is ok
-  }
-
-  const handleClick = (e) => {
-    // console.log(e.target)
-    logEvent('click', 1)
-  }
-  return (
-    <Layout user={user} loading={loading}>
-      <h1>COMPSCI335 - Functional Programming and Distributed Services</h1>
-      {loading && <p>Loading login info...</p>}
-      {!loading && !user && (
-        <>
-          <p>
-            To view the dashboard <a href='/api/login'>Login</a>
-          </p>
-        </>
-      )}
-      {user && (
-        <>
-          <lecture>
-            <button className='btn-blue' onClick={handleClick}>Watch</button>
-          </lecture>
-        </>)}
-    </Layout>
-  )
-}
-
-export default Home
+</div>
+<div class="flex mb-4">
+  <div class="flex-1 h-12"><h2 class='button' onClick={() => {setShowRelatedVideos(!showRelatedVideos)}}>Lectures</h2></div>
+  <div class="flex-1 h-12"></div>
+  <div class="flex-1 h-12"></div>
+  <div class="flex-1 h-12"></div>
+  <div class="flex-1 h-12"></div>
+  <div class="flex-1 h-12"></div>
+</div>
+{showRelatedVideos && <div class='flex '>
+      {filenames.map(filename => {
+        return (
+          <div class='flex my-3 bg-white rounded-lg shadow-md mx-3'>
+            <div className='flex'>
+            <ReactPlayer url={`../${filename}.mp4`} display='flex'
+          controls
+          width='50%'
+          height='auto' />
+          <p style={{ marginLeft: '10px' }}><a href='/hello'>COMPSCI335 - (401-439) [L01C]</a></p>
+            </div>
+          </div>
+        )
+      })}
+  </div>}
+</article>
+</Layout>
+)}

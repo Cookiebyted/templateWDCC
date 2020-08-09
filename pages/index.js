@@ -39,7 +39,7 @@ function Home () {
   return (
     <Layout user={user} loading={loading}>
       <div>
-        <h1>COMPSCI 335 Lectures</h1>
+        <h1>Home Page</h1>
       </div>
       <p><strong><u>Content covered in Semester Two</u></strong></p>
       
@@ -48,7 +48,7 @@ function Home () {
           <li>COMPSCI 313 Computer Organisation</li>
           <li>COMPSCI 345 Human-computer Interaction</li>
           <li>COMPSCI 350 Mathematical Foundations of Computer Science</li>
-          <li><a href="/hello">COMPSCI 335 Functional Programming and Distributed Servers</a></li>
+          <li><a href="/lecture">COMPSCI 335 Functional Programming and Distributed Servers</a></li>
         </ol>
       </div>
       
@@ -57,13 +57,13 @@ function Home () {
       {!loading && !user && (
         <>
           <p style={{marginTop : "20px"}}>
-            To view the dashboard: <button className='btn-blue'><a href='/api/login' style={{color:"blue"}}>Login</a></button>
+            To view the dashboard: <button className='btn-blue'><a href='/api/login' style={{color:"white"}}>Login</a></button>
           </p>
         </>
       )}
       {user && (
         <>
-          <ProfileCard user={user}>
+          <ProfileCard user={user} style={{marginTop : "20px"}}>
             <button className='btn-blue' onClick={handleClick}>Courses</button>
           </ProfileCard>
 

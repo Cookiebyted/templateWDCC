@@ -63,7 +63,7 @@ return(
                 controls
                 width='50%'
                 height='auto' />
-                <p style={{ marginLeft: '10px' }}>Compsci 335 </p>
+                <p style={{ marginLeft: '10px' }}><a href='/notfound'>COMPSCI335 - (401-439) [L01C]</a> </p>
                   </div>
                 </div>
               )
