@@ -45,23 +45,18 @@ return(
         <div class="flex-1 h-12"></div>
         <div class="flex-1 h-12"></div>
       </div>
-      {showRelatedVideos && <div class='flex flex-wrap'>
+      {showRelatedVideos && <div class='flex '>
         
-          {/* <ReactPlayer url='../demo2.mp4'
-            display='inline-block'
-            controls
-            width='30%'
-            height='auto'
-        
-            ></ReactPlayer> */}
+
             {filenames.map(filename => {
               return (
                 <div class='flex my-3 bg-white rounded-lg shadow-md mx-3'>
-                  <div className='flex-col flex-grow'>
-                  <ReactPlayer url={`../${filename}.mp4`} display='inline-block'
+                  <div className='flex'>
+                  <ReactPlayer url={`../${filename}.mp4`} display='flex'
                 controls
-                width='30%'
+                width='50%'
                 height='auto' />
+                <p style={{ marginLeft: '10px' }}>Compsci 335 </p>
                   </div>
                 </div>
               )
